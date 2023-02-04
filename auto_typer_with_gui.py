@@ -35,3 +35,9 @@ start_button.pack()
 text_widget.pack()
 
 root.mainloop()
+
+def start_typing():
+    text = text_entry.get()
+    typing_speed = float(speed_entry.get())
+    auto_type(text, typing_speed)
+    root.destroy()
